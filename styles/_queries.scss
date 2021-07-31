@@ -1,0 +1,23 @@
+@mixin mqmin($size) {
+  @media (min-width: $size) {
+    @content
+  }
+};
+
+@mixin mqmax($size) {
+  @media (max-width: $size) {
+    @content
+  }
+};
+
+@mixin mqminp($size) {
+  @media (min-width: $size) and (orientation: portrait) {
+    @content
+  }
+};
+
+@mixin mqls($size) {
+  @media (min-width: $size) and (orientation: landscape) {
+    @content
+  }
+};
